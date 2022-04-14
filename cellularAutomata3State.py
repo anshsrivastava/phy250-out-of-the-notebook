@@ -96,7 +96,8 @@ def test_get_lookup_table0():
     Test the lookup table of rules for rule 0
     '''
     tst = cellularAutomata3State(leng=100, rulenum=0)
-    assert tst.get_lookup_table() == {(0, 0): 0, (0, 1): 0, (1, 0): 0, (2, 1): 0, (2, 2): 0, (0, 2): 0, (2, 0): 0, (1, 2): 0, (1, 1): 0}
+    assert tst.get_lookup_table() == {(0, 0): 0, (0, 1): 0, (1, 0): 0, 
+                                      (2, 1): 0, (2, 2): 0, (0, 2): 0, (2, 0): 0, (1, 2): 0, (1, 1): 0}
     print("get_lookup_table() works for rule 0! ")
     
 def test_get_lookup_table3():
@@ -104,5 +105,6 @@ def test_get_lookup_table3():
     Test the lookup table of rules for rule 3
     '''
     tst = cellularAutomata3State(leng=100, rulenum=3)
-    assert tst.get_lookup_table() == {(0, 0): 0, (0, 1): 1, (1, 0): 0, (2, 1): 0, (2, 2): 0, (0, 2): 0, (2, 0): 0, (1, 2): 0, (1, 1): 0}
+    assert tst.get_lookup_table() == {(0, 0): 0, (0, 1): 1, (1, 0): 0, (2, 1): 0, 
+                                      (2, 2): 0, (0, 2): 0, (2, 0): 0, (1, 2): 0, (1, 1): 0}
     print("get_lookup_table() works fo rule 3! ")
