@@ -70,10 +70,8 @@ class cellularAutomata3State:
             for i in range(len(current_configuration)):
                 neighborhood = (current_configuration[i], current_configuration[i-1])
                 new_configuration.append(int(lookup_table[neighborhood]))
-        
             current_configuration = new_configuration
             spacetime_field.append(new_configuration)
-        
         return spacetime_field
     
     def plot_spacetime_field(self, time):
